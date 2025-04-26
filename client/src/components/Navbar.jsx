@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import {  AnimatePresence } from "framer-motion";
+import {  motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const links = [

@@ -2,6 +2,7 @@ import ImageSlider from "../components/ImageSlider";
 import Navbar from "../components/Navbar";
 import OfferSection from "../components/OfferSection";
 import Footer from "../components/FooterSection";
+import InfiniteCards from "../components/InfiniteCards";
 
 export default function HomePage() {
   const slides = [
@@ -9,6 +10,13 @@ export default function HomePage() {
     "https://images.unsplash.com/photo-1745172366995-a55968e94797?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDh8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1744762567611-dee68f42ecc9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D",
   ];
+
+  const data = [
+    { quote: "Stay hungry, stay foolish.", name: "Steve Jobs", title: "Apple Founder" },
+    { quote: "Believe you can and you're halfway there.", name: "Theodore Roosevelt", title: "Former President" },
+    { quote: "Do what you can, with what you have.", name: "Theodore Roosevelt", title: "Leader" },
+  ];
+  
   return (
     <div className="h-full w-full">
       <Navbar />
@@ -64,6 +72,7 @@ export default function HomePage() {
         What we do!
       </h1>
       <OfferSection />
+      <InfiniteCards items={data} direction="left" speed="normal" />
       <Footer />
     </div>
   );
