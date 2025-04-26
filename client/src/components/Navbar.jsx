@@ -15,18 +15,18 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed mt-5 w-full rounded-4xl top-0 z-50 bg-yellow-500 backdrop-blur border-b border-gray-200">
+    <header className="fixed mt-5 w-full rounded-4xl top-0 z-50 bg-yellow-500 backdrop-blur">
       <nav className="max-w-7xl mx-auto flex items-center justify-between p-4">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold" onClick={() => setOpen(false)}>
-          Brand
+          <img src="../images/logo.png" className="h-12 w-12 rounded-[50%]" alt="" />
         </Link>
 
         {/* Desktop links */}
         <ul className="hidden md:flex gap-8">
           {links.map((l) => (
             <li key={l.name}>
-              <Link to={l.href} className="hover:text-blue-600 transition-colors">
+              <Link to={l.href} className="text-lg font-medium transition-colors">
                 {l.name}
               </Link>
             </li>
@@ -50,13 +50,13 @@ export default function Navbar() {
             initial={{ height: 0 }}
             animate={{ height: "auto" }}
             exit={{ height: 0 }}
-            className="md:hidden flex flex-col gap-4 bg-white border-t border-gray-200 overflow-hidden px-4 pb-4"
+            className="md:hidden flex flex-col gap-4 bg-yellow-500 border-t border-gray-200 overflow-hidden px-4 pb-4"
           >
             {links.map((l) => (
               <li key={l.name}>
                 <Link
                   to={l.href}
-                  className="block py-2 hover:text-blue-600"
+                  className="block py-2"
                   onClick={() => setOpen(false)}
                 >
                   {l.name}

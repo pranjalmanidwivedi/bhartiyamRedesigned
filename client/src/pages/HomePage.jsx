@@ -24,7 +24,7 @@ export default function HomePage() {
 
       <div className="flex flex-col md:flex-row">
         {/* ABOUT */}
-        <div className="w-full md:w-1/2 h-[800px] bg-black text-white flex flex-col items-center justify-center">
+        <div className="w-full md:w-1/2  h-[800px] bg-black text-white flex flex-col items-center justify-center">
           <h1 className="text-4xl mb-24">About Us</h1>
           <p className="w-4/5 text-xl text-center md:text-left">
             Located in Beohari, Shahdol (M.P.), Bhartiyam School is dedicated to
