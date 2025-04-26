@@ -6,9 +6,9 @@ import InfiniteCards from "../components/InfiniteCards";
 
 export default function HomePage() {
   const slides = [
-    "https://plus.unsplash.com/premium_photo-1744991859949-6297ee4b8f96?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D",
-    "https://images.unsplash.com/photo-1745172366995-a55968e94797?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDh8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1744762567611-dee68f42ecc9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D",
+    "../images/slider_image_1.jpg",
+    "../images/slider_image_2.jpg",
+    "../images/slider_image_3.jpg",
   ];
 
   const data = [
