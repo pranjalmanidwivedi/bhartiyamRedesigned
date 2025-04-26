@@ -1,6 +1,7 @@
 import ImageSlider from "../components/ImageSlider";
 import Navbar from "../components/Navbar";
 import OfferSection from "../components/OfferSection";
+import Footer from "../components/FooterSection";
 
 export default function HomePage() {
   const slides = [
@@ -59,10 +60,11 @@ export default function HomePage() {
           </form>
         </div>
       </div>
-      <div className="features">
-        <h1 className="text-4xl mt-12 mb-10 md:mt-24 md:mb-20 text-center">What we do!</h1>
-        <OfferSection />
-      </div>
+      <h1 className="text-4xl mt-12 mb-10 md:mt-24 md:mb-20 text-center">
+        What we do!
+      </h1>
+      <OfferSection />
+      <Footer />
     </div>
   );
 }
